@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    
+}
+body{
+    background-color: #f0f0f0;
+    height: 200vh;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*style for navbar*/
+nav{
+    background-color: #ffffff;
+    margin: 5px 0;
+    padding: 1% 4%;
+    text-align: center;
+    display:flex ;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 100px;
+    
+}
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
+nav ul{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    display:flex ;
+    flex-direction: row;
+    align-items: center;
+}
+nav ul li{
+    margin:  0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgba(51, 51, 51, 0.7) ;
+    transition: 0.5s;
+}
+.active{
+    color: #333;
+}
+nav ul li a:hover{
+    color: #333;
+}
+.buttons_shop_and_search{
+    margin: 0 10px;
+    display:flex ;
+    flex-direction: row;
+}
+.buttons_shop_and_search button{
+    border-radius: 100%;
+    border: #333 solid 1px;
+    margin: 15px 5px;
+    width: 40px;
+    height: 40px;
+    padding: auto;
+    text-align: center;
+    background-color: rgba(51, 51, 51,0.1);
+    border: none;
+    cursor: pointer;
+}
+.buttons_shop_and_search button:hover{
+    background-color: rgba(51, 51, 51,0.3);
+}
+nav a{
+    text-decoration: none;
+    color: rgba(51, 51, 51,0.7);
+    margin: 27px 5px;
+}
+nav a:hover{
+    color: rgb(51, 51, 51);
+}
+.user{
+    height: 40px;
+    width: 80px;
+    margin-top: 18px;
+    margin-right: 5px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #00351a;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.user:hover{
+    background-color: #00351a;
+    color: #f2f2f2;
+}
+.contact_us{
+    height: 40px;
+    width: 80px;
+    margin-top: 18px;
+    margin-left: 20px;
+    background-color: rgb(158, 0, 194);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact_us:hover{
+    background-color: rgb(158, 0, 194,0.8);
+}
+
+/*style for dropdown*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    width:115px ;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color:rgba(51, 51, 51, 0.7) ;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: #000000 2px solid;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+ 
+/*style for section*/
+/*style for banner*/
+.banner{
+    background-image: url('images/wallpaper2.jpg');
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 60px 60px;
+}
+.banner h1{
+    font-size: 40px;
+    color: #f2f2f2;
+    margin: 10px;
+
+}
+.banner h4{
+    font-size: 30px;
+    color: #f2f2f2;
+    margin: 10px;
+}
+.banner p{
+    font-size: 15px;
+    color: #f2f2f2;
+    margin: 10px;
+}
+
+/* style for search and all course*/
+.search_and_allcourse{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 40px;
+    width: 80%;
+    height: 70px;
+    background-color: #f2f2f2;
+    box-shadow: #00000078 2px 2px 10px;
+    position: relative;
+    top: -30px;
+    left: 10%;
+}
+.search_and_allcourse a{
+    text-decoration: none;
+    color: #252525;
+    margin: 10px 0;
+}
+hr{
+    background-color: #000000;
+    position: relative;
+    left: 30%;
+    width: 2px;
+
+}
+
+.search_and_allcourse input{
+    width: 25%;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*score and rank*/
+
+.container {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 400px;
+    height: auto;
+    position: relative;
+    left: 800px;
+    
+}
+
+.user_info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user_icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.user_info a{
+    text-decoration: none;
+    color: #3a00a6;
+    position: absolute;
+    right: 20px;
+    top: 32px;
+}
+.container hr{
+    border: 1px solid gray;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    left: 0px;
+}
+.progress-image{
+    text-align: center;
+    margin: 30px 0;
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #3e3e3e;
+}
+.text img{
+    width: 20px;
+    position: relative;
+    top: 15px;
+
+}
+.rank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.create_new_course{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+.create_new_course h1{
+    margin: 20px;
+    font-size: 3em;
+    font-weight: 100;
+    color: #060061;
+}
+.create_new_course h4{
+    margin: 20px;
+    font-size: 1em;
+}
+.Reach{
+    text-align: left;
+    margin: 20px;
+    width: 200px;
+}
+.Badges{
+    margin: 20px;
+}
+.view{
+    position: relative;
+    left: 300px;
+    top: -45px;
+    text-decoration: none;
+    color: #3a00a6;
+}
+
+.get_started{
+    opacity: 0.1;
+}
+.get_started h3{
+    font-size: 1em;
+    margin: 5px 10px;
+}
+.get_started p{
+    font-size: 0.8em;
+    margin: 5px 10px;
+}
+.get_started h3,.get_started p{
+    position: relative;
+    left: 50px;
+    top: -45px;
+
+}
+.get_started img{
+    position: relative;
+    width: 40px;
+}
+
+/* Style for footer */
+
+footer{
+    background-color:rgb(0, 46, 75) ;
+    width: 100%;
+    margin: 300px 0 0 0;
+    height: 450px;
+    padding: 30px;
+}
+.qusetion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    height: 100px;
+}
+.qusetion h6{
+    color: #f2f2f2;
+    font-size: 1em;
+    margin: 10px 0;
+}
+.qusetion h4{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.3em;
+}
+.qusetion a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.1em;
+}
+.qusetion a:hover{
+    text-decoration: solid #f2f2f2;
+}
+
+.for_call{
+    display: flex;
+    flex-direction: column;
+}
+.send_missage{
+    display: flex;
+    flex-direction: column;
+}
+.follow_us{
+    height: 100px;
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right: -800px;
+    top: -100px;
+    padding: 10px 0;
+}
+.follow_us h6{
+    position: relative;
+    right: 30px;
+    font-size: 1.1em;
+    color: #f2f2f2;
+}
+.follow_us a{
+    position: relative;
+    right: 30px;
+    text-decoration: none;
+    color: #f2f2f2;
+    margin: 5px;
+    font-size: 1.5em;
+    
+}
+.social_icon{
+    display: flex;
+    position: relative;
+    top: 30px;
+    right: 88px;
+}
+
+/*Style after tag <hr>*/
+
+.sites{
+    display: flex;
+    justify-content: right;
+    width: 70%;
+    margin: 30px auto;
+    position: relative;
+    right: -100px;
+    height: 50px;
+}
+
+.sites ul{
+    display: flex;
+    justify-content: space-between;
+}
+.sites ul li{
+    margin: 10px;
+    list-style-position:inside ;
+    font-size: 1.2em;
+}
+.sites ul li::marker{
+    color: #f2f2f2;
+}
+.sites ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+.logo_end{
+    position: relative;
+    left: 100px;
+    top: -90px;
+}
+
+

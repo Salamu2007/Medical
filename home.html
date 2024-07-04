@@ -1,0 +1,234 @@
+<!--create an page html-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <!--body-->
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="logo">
+            <img src="image/Logo.png" >
+        </div>
+        <ul>
+            <li ><a class="active" href="home.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="service.html">Service</a></li>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">company
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="news.html">News</a>
+                    <a href="about_us.html">About us</a>
+                </div>
+            </div> 
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="buttons_shop_and_search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <a href="#"><i class="fa-solid fa-phone"></i> +213 658 04 69 77</a>
+        <button class="user">Islam <i class="fa-solid fa-caret-down"></i></button>
+        <button class="contact_us">Contact us</button>
+
+    </nav>
+    <!--section 1-->
+    <div class="bgimg-1">
+        <div class="t1"></div>
+        <div class="caption">
+            <span class="border">Sell from your couch</span>
+            <p>Make your finances reach a new level with our online management system. Track every penny, directly from the comfort of your home.</p>
+            <div class="t2"></div>
+        </div>
+    </div>
+    
+    <div style="color: #000000;background-color:#f2f2f2;text-align:center;padding:50px 80px;text-align: justify; height: 400px;">
+        <h3 style="text-align:left; font-weight: bold;font-size: 1.7em;">Everything you need,<br> totally free</h3>
+        <p style="color: #000000; text-align: left;  font-size: 1.4em;">Track every expenses, uncover new ways to save,<br> choose the right credit cards. All those advices and<br> much more are included and totally free of charge.</p>
+        <img class="bavates" src="image/bavat.png" style="width: 500px; display: flex; position: relative; left: 650px; top: -100px; border-radius: 50% 0 50% 0;" >
+        <button type="button" class="Learn_more">Learn more</button>
+    </div>
+    
+    <div class="bgimg-2">
+        <div class="t3"></div>
+        <div class="caption">
+            <span class="border" style="background-color:transparent;font-size:3em;color: #f2f2f2; letter-spacing: 0px;">We create the perfect tailored solution for you</span>
+            <div class="t4"></div>
+        </div>
+    </div>
+    
+    <div style="position:relative;">
+        <div style="color:#000000;background-color:#f2f2f2;text-align:center;padding:50px 80px;text-align: justify;">
+            <div class="features">
+                <div class="feature1">
+                    <img src="image/shield.gif" alt="shield" class="logo_gif">
+                    <h3>Secured</h3>
+                    <p>Our system is secured with the latest technology to ensure your data is safe.</p>
+                </div>
+                <div class="feature1">
+                    <img src="image/hourglass.gif" alt="clock" class="logo_gif">
+                    <h3>Procession in timing</h3>
+                    <p>Punctuality helps reduce waiting time for patients, improves physician schedule management, and promotes maximum utilization of medical resources.</p>
+                </div>
+                <div class="feature1">
+                    <img src="image/star.gif" alt="star" class="logo_gif">
+                    <h3>easy to use</h3>
+                    <p>A small explanation of this great feature ,in clear words</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------section for slideshow-------->
+    <!--------Slideshow container---------->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="image/bavat.jpg" style="width:100%; filter: brightness(50%); height: 95vh;">
+            <h3 class="title_sentence1">Efficient team processes</h3>
+            <div class="sentence1"><p>We integrate digital tools and solutions for better insights,<br>
+                enabling data-driven planning.</p></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="image/images.jpg" style="width:100%; filter: brightness(50%); height: 95vh; ">
+            <h3 class="title_sentence2">Personal adviser</h3>
+            <div class="sentence2">
+                <p>
+                    At any moment, you may contact our advisor through<br> the in-app video meeting system.</p>
+            </div>
+            
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="image/image2.jpg" style="width:100%; filter: brightness(50%); height: 95vh; ">
+            <h3 class="title_sentence3">Simplify things</h3>
+            <div class="sentence3">
+                <p>We invest in strategic advice tailored to your business problems and needs.</p>
+            </div>
+            
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+    <!--end section for slideshow-->
+    <!--Section for service-->
+    <section>
+        <div class="number_of_Users">
+            <div class="Useful_options">
+                <center>
+                    <label>12</label>
+                    <p>Useful options</p>
+                </center>
+            </div>
+            <div class="Beautiful_snippets">
+                <center>
+                    <label>45</label>
+                    <p>Beautiful snippets</p>
+                </center>
+            </div>
+            <div class="Greate_pages">
+                <center>
+                    <label>8</label>
+                    <p>Greate pages</p>
+                </center>
+            </div>
+            <div class="Outstanding_images">
+                <center>
+                    <label>37</label>
+                    <p>Outstanding images</p>
+                </center>
+            </div>
+        </div>
+        <div class="services">
+            <div class="service">
+                <img src="images/service1.jpg">
+                <h3>Our mission</h3>
+                <p>Provide clear and concise financial<br> advices to make your financial wealth grow.
+                     And this, completely free of charge.</p>
+            </div>
+            <div class="service">
+                <img src="image/قلب انسان.png">
+                <h3>Our values</h3>
+                <p>We created our company to improve the work-life balance.
+                     We believe that we need to focus on our family more than our work and finances.</p>
+            </div>
+            <div class="service">
+                <img src="image/كبد انسان.png">
+                <h3>Our team</h3>
+                <p>Composed of 25 people from 25 to 66 years, we’re a young and dynamic company.
+                     We have open positions, do not hesitate to contact us.</p>
+            </div>
+        </div>
+        <div class="number_of_All_users">
+            <p class="joun">50,000 people, run Clean to grow their financial wealth.</p>
+            <br><br>
+            <p class="join">Join them and make the right money move.</p>
+            <button class="service_button">Service</button>
+        </div>
+    </section>
+    <footer>
+        <div class="qusetion">
+            <div class="question_for_help">
+                <h6>How can we help?</h6>
+                <h4>Contact us anytime</h4>
+            </div>
+            <div class="for_call">
+                <h6>Call us</h6>
+                <h4><a href="#">+213 658 04 69 77</a></h4>
+            </div>
+            <div class="send_missage">
+                <h6>Send us a message</h6>
+                <h4><a href="#">example@gmail.com</a></h4>
+            </div>
+        </div>
+        <div class="follow_us">
+            <h6>Follow us</h6>
+            <div class="social_icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="sites">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="logo_end">
+            <a href="home.html"><img src="image/Logo.png" style="height: 100px; width: 100px;"></a>
+        </div>
+        <p style="position: relative; top: -70px; font-size: 0.7em; color: #f2f2f2; text-align: center;">Life Heal 2024@copyright | All right reserved</p>
+    </footer>
+</body>
+<script src="home.js"></script>
+
+</html>

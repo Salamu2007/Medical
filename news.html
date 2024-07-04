@@ -1,0 +1,104 @@
+<!--create an page html-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+    <!--body-->
+<body>
+    <!--navbar-->
+    <nav>
+        <div class="logo">
+            <img src="image/Logo.png" >
+        </div>
+        <ul>
+            <li ><a  href="home.html">Home</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="service.html">Service</a></li>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">company
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a class="active" href="news.html">News</a>
+                    <a href="about_us.html">About us</a>
+                </div>
+            </div> 
+            <li><a href="#">Appointment</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        <div class="buttons_shop_and_search">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <a href="#"><i class="fa-solid fa-phone"></i> +213 658 04 69 77</a>
+        <button class="user">Islam <i class="fa-solid fa-caret-down"></i></button>
+        <button class="contact_us">Contact us</button>
+
+    </nav>
+
+    <div class="banner">
+        <h1>Welcome to News our website</h1>
+        <p>Learn new skills and get certified</p>
+    </div>
+
+    <div class="search_and_allcourse">
+        <a href="#"><i class="fa-solid fa-newspaper"></i> Latest News</a>
+        <a style="position: relative; left: -200px;" href="#"><i class="fa-solid fa-blog"></i> Blog</a>
+        <hr>
+        <input type="search" name="search" id="search" placeholder="Search News">
+    </div>
+
+    <div class="create_new_course">
+        <h1 >No News Now</h1>
+        <h4>click "New +" for create a News</h4>
+    </div>
+
+    <footer>
+        <div class="qusetion">
+            <div class="question_for_help">
+                <h6>How can we help?</h6>
+                <h4>Contact us anytime</h4>
+            </div>
+            <div class="for_call">
+                <h6>Call us</h6>
+                <h4><a href="#">+213 658 04 69 77</a></h4>
+            </div>
+            <div class="send_missage">
+                <h6>Send us a message</h6>
+                <h4><a href="#">example@gmail.com</a></h4>
+            </div>
+        </div>
+        <div class="follow_us">
+            <h6>Follow us</h6>
+            <div class="social_icon">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="sites">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About us</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="logo_end">
+            <a href="home.html"><img src="image/Logo.png" style="height: 100px; width: 100px;"></a>
+        </div>
+        <p style="position: relative; top: -70px; font-size: 0.7em; color: #f2f2f2; text-align: center;">Life Heal 2024@copyright | All right reserved</p>
+    </footer>
+</body>
+<script src="home.js"></script>
+
+</html>
